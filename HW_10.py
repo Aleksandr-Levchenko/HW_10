@@ -4,6 +4,13 @@ import platform  # для clearscrean()
 from RecordBook import AddressBook, Record, Name, Phone, Field
 import re
 
+
+#-----------------------------------------
+# формат збереження даних у файлі:
+#
+# Lisa:+44345345345, +89777111222, +99222333
+# Alex:+380954448899, +450342233     
+#-------------------------------------------
 path = Path("D:\Git\HW_09\database_09.csv")
 book = AddressBook()
 
