@@ -54,7 +54,13 @@ class AddressBook(UserDict):
     def add_record(self, record):
         self.data[record.name.value] = record
     
-    # збереження записів книги у файлі        
+    #-----------------------------------------
+    # збереження записів книги у файлі   
+    # формат збереження даних:
+    #
+    # Lisa:+44345345345, +89777111222, +99222333
+    # Alex:+380954448899, +450342233     
+    #-------------------------------------------
     def load_database(self, book, path):
         with open(path, "r") as f_read:
             while True:                
